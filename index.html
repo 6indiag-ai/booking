@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.card-img-top{height:180px;object-fit:cover;}
+footer{background:#111;color:white;text-align:center;padding:20px;margin-top:40px;}
+.search-box{max-width:500px;margin:auto;}
+</style>
+</head><body>
+<nav class="navbar navbar-dark bg-primary"><div class="container"><span class="navbar-brand">Universal Booking – PRO PLUS</span></div></nav>
+
+<div class="container mt-4">
+<div class="search-box">
+<input id="search" type="text" class="form-control form-control-lg" placeholder="Search services...">
+</div>
+
+<h2 class="my-4">Top Categories</h2>
+<div class="row g-4" id="catList">
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/hotels.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Hotels</h5>
+<p class="card-text">Best Hotels services near you.</p>
+<a href="hotels.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/transport.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Transport</h5>
+<p class="card-text">Best Transport services near you.</p>
+<a href="transport.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/events.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Events</h5>
+<p class="card-text">Best Events services near you.</p>
+<a href="events.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/electrician.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Electrician</h5>
+<p class="card-text">Best Electrician services near you.</p>
+<a href="electrician.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/doctor.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Doctor</h5>
+<p class="card-text">Best Doctor services near you.</p>
+<a href="doctor.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/mechanic.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Mechanic</h5>
+<p class="card-text">Best Mechanic services near you.</p>
+<a href="mechanic.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/plumber.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Plumber</h5>
+<p class="card-text">Best Plumber services near you.</p>
+<a href="plumber.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/catering.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Catering</h5>
+<p class="card-text">Best Catering services near you.</p>
+<a href="catering.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/property.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Property</h5>
+<p class="card-text">Best Property services near you.</p>
+<a href="property.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+<div class="col-md-4 cat-card">
+<div class="card shadow-sm">
+<img src="assets/img/tutor.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Tutor</h5>
+<p class="card-text">Best Tutor services near you.</p>
+<a href="tutor.html" class="btn btn-primary">Explore</a>
+</div>
+</div></div>
+
+</div></div>
+<script>
+document.getElementById("search").addEventListener("keyup", function() {
+  let val=this.value.toLowerCase();
+  document.querySelectorAll(".cat-card").forEach(card=>{
+    card.style.display = card.innerText.toLowerCase().includes(val) ? "" : "none";
+  });
+});
+</script>
+<footer>© 2025 Universal Booking</footer>
+</body></html>
